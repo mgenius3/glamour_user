@@ -147,11 +147,14 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   void _newlyRegisteredRouteProcess() {
-    if (AppConstants.languages.length > 1) {
-      Get.offNamed(RouteHelper.getLanguageRoute('splash'));
-    } else {
-      Get.offNamed(RouteHelper.getOnBoardingRoute());
-    }
+    Get.offNamed(RouteHelper.getOnBoardingRoute());
+
+//commenting the language selecting routes for new users
+    // if (AppConstants.languages.length > 1) {
+    //   Get.offNamed(RouteHelper.getLanguageRoute('splash'));
+    // } else {
+    //   Get.offNamed(RouteHelper.getOnBoardingRoute());
+    // }
   }
 
   void _forGuestUserRouteProcess() {

@@ -1,4 +1,5 @@
 class SignUpBodyModel {
+  String? name; //added by moses
   String? fName;
   String? lName;
   String? phone;
@@ -8,6 +9,7 @@ class SignUpBodyModel {
   String? deviceToken;
 
   SignUpBodyModel({
+    this.name,
     this.fName,
     this.lName,
     this.phone,
@@ -18,6 +20,7 @@ class SignUpBodyModel {
   });
 
   SignUpBodyModel.fromJson(Map<String, dynamic> json) {
+    name = json['f-name'] + ' ' + json['l-name']; //added by moses
     fName = json['f_name'];
     lName = json['l_name'];
     phone = json['phone'];
@@ -29,6 +32,7 @@ class SignUpBodyModel {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
+    data['name'] = fName! + ' ' + lName!; //added by moses
     data['f_name'] = fName;
     data['l_name'] = lName;
     data['phone'] = phone;

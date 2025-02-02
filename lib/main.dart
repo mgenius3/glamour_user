@@ -62,10 +62,10 @@ Future<void> main() async {
   } else if (GetPlatform.isAndroid) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCic6Mw3RRPFcimXhwGidwhCN0tXY7HFFc",
-        appId: "1:1000163153346:android:9d8caf29b912e11606b25b",
-        messagingSenderId: "1000163153346",
-        projectId: "ammart-8885e",
+        apiKey: "AIzaSyD53WH58qfpi13nCSRu5LB_mu-MWlcNQvU",
+        appId: "1:564852521796:android:ce2d25fe3cd9bd6080b511",
+        messagingSenderId: "564852521796",
+        projectId: "glamourgo-e728e",
       ),
     );
   } else {
@@ -89,11 +89,7 @@ Future<void> main() async {
 
   if (ResponsiveHelper.isWeb()) {
     await FacebookAuth.instance.webAndDesktopInitialize(
-      appId: "380903914182154",
-      cookie: true,
-      xfbml: true,
-      version: "v15.0",
-    );
+        appId: "380903914182154", cookie: true, xfbml: true, version: "v15.0");
   }
   runApp(MyApp(languages: languages, body: body));
 }

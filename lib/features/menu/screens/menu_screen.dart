@@ -73,8 +73,9 @@ class _MenuScreenState extends State<MenuScreen> {
                               ? '${profileController.userInfoModel?.fName} ${profileController.userInfoModel?.lName ?? ''}'
                               : 'guest_user'.tr,
                           style: robotoBold.copyWith(
-                              fontSize: Dimensions.fontSizeExtraLarge,
-                              color: Theme.of(context).cardColor),
+                            fontSize: Dimensions.fontSizeExtraLarge,
+                            // color: Theme.of(context).cardColor
+                          ),
                         ),
                         const SizedBox(
                             height: Dimensions.paddingSizeExtraSmall),
@@ -86,8 +87,9 @@ class _MenuScreenState extends State<MenuScreen> {
                                             .userInfoModel!.createdAt!)
                                     : '',
                                 style: robotoMedium.copyWith(
-                                    fontSize: Dimensions.fontSizeSmall,
-                                    color: Theme.of(context).cardColor),
+                                  fontSize: Dimensions.fontSizeSmall,
+                                  // color: Theme.of(context).cardColor
+                                ),
                               )
                             : InkWell(
                                 onTap: () async {
@@ -129,9 +131,10 @@ class _MenuScreenState extends State<MenuScreen> {
                     child: Text(
                       'general'.tr,
                       style: robotoMedium.copyWith(
-                          fontSize: Dimensions.fontSizeDefault,
-                          color:
-                              Theme.of(context).primaryColor.withOpacity(0.5)),
+                        fontSize: Dimensions.fontSizeDefault,
+                        // color:
+                        //     Theme.of(context).primaryColor.withOpacity(0.5)
+                      ),
                     ),
                   ),
                   Container(
@@ -176,9 +179,10 @@ class _MenuScreenState extends State<MenuScreen> {
                     child: Text(
                       'promotional_activity'.tr,
                       style: robotoMedium.copyWith(
-                          fontSize: Dimensions.fontSizeDefault,
-                          color:
-                              Theme.of(context).primaryColor.withOpacity(0.5)),
+                        fontSize: Dimensions.fontSizeDefault,
+                        // color:
+                        //     Theme.of(context).primaryColor.withOpacity(0.5)
+                      ),
                     ),
                   ),
                   Container(
@@ -273,10 +277,11 @@ class _MenuScreenState extends State<MenuScreen> {
                               child: Text(
                                 'earnings'.tr,
                                 style: robotoMedium.copyWith(
-                                    fontSize: Dimensions.fontSizeDefault,
-                                    color: Theme.of(context)
-                                        .primaryColor
-                                        .withOpacity(0.5)),
+                                  fontSize: Dimensions.fontSizeDefault,
+                                  // color: Theme.of(context)
+                                  //     .primaryColor
+                                  //     .withOpacity(0.5)
+                                ),
                               ),
                             ),
                             Container(
@@ -364,9 +369,10 @@ class _MenuScreenState extends State<MenuScreen> {
                     child: Text(
                       'help_and_support'.tr,
                       style: robotoMedium.copyWith(
-                          fontSize: Dimensions.fontSizeDefault,
-                          color:
-                              Theme.of(context).primaryColor.withOpacity(0.5)),
+                        fontSize: Dimensions.fontSizeDefault,
+                        // color:
+                        //     Theme.of(context).primaryColor.withOpacity(0.5)
+                      ),
                     ),
                   ),
                   Container(
