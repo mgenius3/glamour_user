@@ -33,6 +33,11 @@
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCy2mbeBeALvvxcmdSmuWyS_W2nDzPMa7A"/>
 
+       <!-- Add Google Sign-In Configuration Here -->
+        <meta-data
+            android:name="com.google.android.gms.signin.client_id"
+            android:value="316976902026-vs9dmtjo52bi7ef490k5nrv8o5dm72hi.apps.googleusercontent.com" />
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

@@ -316,7 +316,7 @@ class SignInScreenState extends State<SignInScreen> {
                 List<int> encoded = utf8.encode(password);
                 String data = base64Encode(encoded);
                 Get.toNamed(RouteHelper.getVerificationRoute(numberWithCountryCode, token, RouteHelper.signUp, data));
-              }
+              } 
             }else {
 
               if(widget.backFromThis) {
